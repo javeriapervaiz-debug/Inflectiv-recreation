@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+artifacts/
+cache/
+typechain-types/
+dist/
+
+# Environment
+.env
+.env.local
+
+# Deployment logs (keep example, ignore actual)
+deployments/*.json
+!deployments/.gitkeep
+
+# Coverage
+coverage/
+coverage.json
+
+# IDE
+.idea/
+*.swp
+*.swo

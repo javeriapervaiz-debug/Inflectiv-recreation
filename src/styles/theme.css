@@ -1,0 +1,410 @@
+/* ============================================
+   INFLECTIV THEME - Cute Pastel Windows Desktop
+   Nostalgic Windows 95 with soft pastel colors
+   ============================================ */
+
+:root {
+  /* ============================================
+     DESKTOP BACKGROUND - Pastel Sunset Grid
+     ============================================ */
+  --desktop-bg-start: #ffecd2;
+  --desktop-bg-mid: #fcb69f;
+  --desktop-bg-end: #ee9ca7;
+  --desktop-grid-color: rgba(255, 255, 255, 0.15);
+
+  /* ============================================
+     BACKGROUND COLORS - Soft Pastels
+     ============================================ */
+  --bg-primary: #fff5f5;
+  --bg-secondary: #fef3f0;
+  --bg-tertiary: #ffeef2;
+  --bg-window: #f5f0f7;
+  --bg-window-title: linear-gradient(90deg, #b4a7d6, #d5a6bd);
+  --bg-teal: #a8e6cf;
+  --bg-content: #fff9fb;
+
+  /* ============================================
+     TEXT COLORS - Soft & Readable
+     ============================================ */
+  --text-primary: #4a4a4a;
+  --text-secondary: #6b5b7a;
+  --text-muted: #8b7b9b;
+  --text-window: #3d3d3d;
+  --text-window-secondary: #5a5a5a;
+
+  /* ============================================
+     ACCENT COLORS - Cute Pastels
+     ============================================ */
+  --accent-pink: #ffb5c5;
+  --accent-pink-bright: #ff8fab;
+  --accent-cyan: #a0e7e5;
+  --accent-cyan-bright: #7dd3fc;
+  --accent-green: #b5ead7;
+  --accent-green-bright: #88d8b0;
+  --accent-purple: #dbb4f3;
+  --accent-purple-bright: #c9a7eb;
+  --accent-yellow: #ffeaa7;
+  --accent-yellow-bright: #fdcb6e;
+  --accent-peach: #ffd1b3;
+  --accent-lavender: #e8daef;
+  --accent-blue: #a8d8ea;
+  --accent-coral: #ffb7b2;
+  --accent-mint: #c7f5de;
+
+  /* ============================================
+     WIN95 COLORS - Pastel Version
+     ============================================ */
+  --win95-gray: #f5f0f7;
+  --win95-gray-light: #faf8fc;
+  --win95-gray-dark: #e8e0ed;
+  --win95-border-light: #ffffff;
+  --win95-border-dark: #d5c8de;
+  --win95-border-darker: #b8a8c5;
+  --win95-blue: #8b7ba8;
+  --win95-blue-light: #a89cc5;
+  --win95-teal: #a8e6cf;
+
+  /* ============================================
+     GRADIENTS - Soft, Dreamy Pastels
+     ============================================ */
+  --gradient-sunset: linear-gradient(180deg, #ffecd2 0%, #fcb69f 50%, #ee9ca7 100%);
+  --gradient-vapor: linear-gradient(135deg, #ffb5c5, #a0e7e5, #b5ead7, #dbb4f3);
+  --gradient-pastel: linear-gradient(135deg, #fff5f5, #fef3f0, #f5f0f7, #ffeef2);
+  --gradient-window-bg: linear-gradient(180deg, #fff9fb 0%, #fef3f0 50%, #fff5f5 100%);
+  --gradient-desktop: linear-gradient(180deg, #ffecd2 0%, #fcb69f 30%, #ee9ca7 60%, #dda0dd 100%);
+
+  /* ============================================
+     SHADOWS - Softer, Pastel-Friendly
+     ============================================ */
+  --shadow-neon: 0 0 20px rgba(255, 181, 197, 0.3), 0 0 40px rgba(160, 231, 229, 0.2);
+  --shadow-neon-strong: 0 0 30px rgba(255, 181, 197, 0.5), 0 0 60px rgba(160, 231, 229, 0.3);
+  --shadow-window: inset -1px -1px #b8a8c5, inset 1px 1px #ffffff, inset -2px -2px #d5c8de, inset 2px 2px #faf8fc;
+  --shadow-button: inset -1px -1px #b8a8c5, inset 1px 1px #ffffff, inset -2px -2px #d5c8de, inset 2px 2px #faf8fc;
+  --shadow-button-pressed: inset 1px 1px #b8a8c5, inset -1px -1px #ffffff, inset 2px 2px #d5c8de, inset -2px -2px #faf8fc;
+  --shadow-inset: inset 1px 1px #d5c8de, inset -1px -1px #ffffff;
+  --shadow-soft: 0 4px 20px rgba(139, 123, 168, 0.15);
+  --shadow-window-drop: 0 8px 32px rgba(139, 123, 168, 0.2), 0 4px 16px rgba(139, 123, 168, 0.15);
+
+  /* ============================================
+     TYPOGRAPHY - Larger, more readable
+     ============================================ */
+  --font-display: "VT323", monospace;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "VT323", monospace;
+
+  /* Font sizes - Significantly larger */
+  --text-xs: 0.875rem;    /* 14px */
+  --text-sm: 1rem;        /* 16px */
+  --text-base: 1.125rem;  /* 18px */
+  --text-lg: 1.25rem;     /* 20px */
+  --text-xl: 1.5rem;      /* 24px */
+  --text-2xl: 1.875rem;   /* 30px */
+  --text-3xl: 2.25rem;    /* 36px */
+  --text-4xl: 3rem;       /* 48px */
+
+  /* ============================================
+     SPACING - Comfortable padding
+     ============================================ */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+
+  /* ============================================
+     BORDERS
+     ============================================ */
+  --border-radius: 0px;
+  --border-radius-soft: 2px;
+}
+
+/* ============================================
+   WIN95 WINDOW COMPONENTS
+   ============================================ */
+.window-frame {
+  background: var(--bg-window);
+  border: none;
+  box-shadow: var(--shadow-window);
+}
+
+.window-title {
+  background: var(--bg-window-title);
+  color: white;
+  padding: 6px 8px;
+  font-weight: bold;
+  font-size: var(--text-base);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.window-buttons {
+  display: flex;
+  gap: 3px;
+}
+
+.window-btn {
+  width: 20px;
+  height: 18px;
+  background: var(--bg-window);
+  box-shadow: var(--shadow-button);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-sm);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.window-btn:hover {
+  background: var(--win95-gray-light);
+}
+
+.window-btn:active {
+  box-shadow: var(--shadow-button-pressed);
+}
+
+/* ============================================
+   BUTTONS - Larger, more clickable
+   ============================================ */
+.btn-win95 {
+  background: var(--bg-window);
+  color: var(--text-window);
+  box-shadow: var(--shadow-button);
+  border: none;
+  padding: 10px 20px;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-win95:hover {
+  background: linear-gradient(135deg, var(--accent-pink), var(--accent-cyan));
+  color: white;
+}
+
+.btn-win95:active {
+  box-shadow: var(--shadow-button-pressed);
+}
+
+.btn-win95-sm {
+  padding: 6px 12px;
+  font-size: var(--text-sm);
+}
+
+.btn-win95-lg {
+  padding: 14px 28px;
+  font-size: var(--text-lg);
+}
+
+/* Primary action button */
+.btn-primary {
+  background: var(--accent-green);
+  color: var(--text-window);
+  box-shadow: var(--shadow-button);
+  border: none;
+  padding: 12px 24px;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-primary:hover {
+  background: var(--accent-green-bright);
+  box-shadow: var(--shadow-button), var(--shadow-neon);
+}
+
+.btn-primary:active {
+  box-shadow: var(--shadow-button-pressed);
+}
+
+/* ============================================
+   TEXT EFFECTS
+   ============================================ */
+.vapor-text {
+  background: var(--gradient-vapor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.neon-glow {
+  filter: drop-shadow(0 0 10px var(--accent-pink));
+}
+
+.text-shadow-retro {
+  text-shadow: 3px 3px var(--accent-pink), -3px -3px var(--accent-cyan);
+}
+
+.text-shadow-soft {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================
+   BACKGROUNDS - Softer, pastel-inspired
+   ============================================ */
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(255, 179, 217, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 219, 255, 0.08) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.bg-vapor-gradient {
+  background: linear-gradient(180deg, #1e1233 0%, #2a1f4e 50%, #1e1233 100%);
+}
+
+.bg-pastel-gradient {
+  background: linear-gradient(135deg, #f8e1f4 0%, #e1f4f8 50%, #e1f8e4 100%);
+}
+
+/* ============================================
+   PROGRESS BAR (Win95 style)
+   ============================================ */
+.progress-bar {
+  background: var(--bg-window);
+  box-shadow: var(--shadow-inset);
+  padding: 3px;
+}
+
+.progress-fill {
+  background: var(--win95-blue);
+  height: 20px;
+}
+
+/* ============================================
+   STATUS BAR
+   ============================================ */
+.status-bar {
+  background: var(--bg-window);
+  border-top: 2px solid #dfdfdf;
+  font-size: var(--text-sm);
+}
+
+.status-item {
+  box-shadow: var(--shadow-inset);
+  padding: 4px 12px;
+}
+
+/* ============================================
+   CARDS - Improved styling
+   ============================================ */
+.card-win95 {
+  background: var(--bg-window);
+  box-shadow: var(--shadow-window);
+  overflow: hidden;
+}
+
+.card-win95-header {
+  background: var(--bg-window-title);
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-win95-content {
+  padding: var(--space-4);
+}
+
+/* Content area with soft gradient */
+.content-area {
+  background: var(--bg-teal);
+  background: linear-gradient(180deg, #008b8b 0%, #006b6b 100%);
+}
+
+/* ============================================
+   BADGES & TAGS
+   ============================================ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  box-shadow: var(--shadow-button);
+}
+
+.badge-primary {
+  background: var(--accent-yellow);
+  color: var(--text-window);
+}
+
+.badge-success {
+  background: var(--accent-green);
+  color: var(--text-window);
+}
+
+.badge-info {
+  background: var(--accent-cyan);
+  color: var(--text-window);
+}
+
+.badge-warning {
+  background: var(--accent-peach);
+  color: var(--text-window);
+}
+
+.badge-purple {
+  background: var(--accent-purple);
+  color: var(--text-window);
+}
+
+/* ============================================
+   INPUT FIELDS - Larger, more usable
+   ============================================ */
+.input-win95 {
+  background: #ffffff;
+  border: none;
+  box-shadow: inset 1px 1px #808080, inset -1px -1px #ffffff, inset 2px 2px #404040;
+  padding: 10px 14px;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--text-window);
+}
+
+.input-win95:focus {
+  outline: 3px solid var(--win95-blue);
+  outline-offset: 0;
+}
+
+.input-win95::placeholder {
+  color: #808080;
+}
+
+/* ============================================
+   STAT CARDS
+   ============================================ */
+.stat-card {
+  background: var(--bg-window);
+  box-shadow: var(--shadow-window);
+  padding: var(--space-5);
+}
+
+.stat-card-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-inset), var(--shadow-neon);
+}
+
+.stat-card-value {
+  font-size: var(--text-2xl);
+  font-weight: bold;
+  color: var(--win95-blue);
+}
+
+.stat-card-label {
+  font-size: var(--text-sm);
+  color: var(--text-window-secondary);
+}

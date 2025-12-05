@@ -1,0 +1,23 @@
+{
+  "name": "inflectiv-contracts",
+  "version": "1.0.0",
+  "description": "Smart contracts for Inflectiv data tokenization platform",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:coverage": "hardhat coverage",
+    "deploy:local": "hardhat run scripts/deploy.ts --network localhost",
+    "deploy:mumbai": "hardhat run scripts/deploy.ts --network polygonMumbai",
+    "deploy:polygon": "hardhat run scripts/deploy.ts --network polygon",
+    "deploy:amoy": "hardhat run scripts/deploy.ts --network polygonAmoy",
+    "deploy:sepolia": "hardhat run scripts/deploy.ts --network sepolia",
+    "node": "hardhat node",
+    "verify": "hardhat verify"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/contracts": "^5.0.1",
+    "hardhat": "^2.19.4",
+    "dotenv": "^16.3.1"
+  }
+}
