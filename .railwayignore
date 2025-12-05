@@ -1,0 +1,12 @@
+# Ignore contracts folder - it has its own dependencies
+# and is deployed separately to blockchain
+contracts/
+
+# Supabase migrations (run separately)
+supabase/
+
+# Development files
+.claude/
+.env.local
+.env
+*.md
